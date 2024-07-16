@@ -113,8 +113,9 @@
         </NavigationMenuContent>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuTrigger>미디어</NavigationMenuTrigger>
-        <NavigationMenuContent> 미디어content </NavigationMenuContent>
+        <NavigationMenuLink href="/media" :class="navigationMenuTriggerStyle()">
+          Media
+        </NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>
   </NavigationMenu>
@@ -130,6 +131,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 
 interface user {
