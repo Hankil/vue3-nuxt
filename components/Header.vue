@@ -3,11 +3,11 @@
     <h1>
       <NuxtLink to="/">
         <img src="~/assets/images/pinia.png" alt="logo" class="w-10" />
-        <span class="text-foreground">TITLE</span>
+        <span class="text-foreground">BizOffice</span>
       </NuxtLink>
     </h1>
-    <Button size="lg">버튼</Button>
     <NavMenu />
+    <Button size="lg">신청</Button>
   </header>
 </template>
 

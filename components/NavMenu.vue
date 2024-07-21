@@ -8,7 +8,7 @@
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuTrigger>소개</NavigationMenuTrigger>
+        <NavigationMenuTrigger>서비스 소개</NavigationMenuTrigger>
         <NavigationMenuContent>
           <ul
             class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]"
@@ -85,12 +85,24 @@
         </NavigationMenuContent>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuTrigger>커뮤니티</NavigationMenuTrigger>
+        <NavigationMenuTrigger>고객지원</NavigationMenuTrigger>
         <NavigationMenuContent>
           <ScrollArea class="h-80">
             <ul
               class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]"
             >
+              <li>
+                <nuxt-link to="/cs/faq">FAQ</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/cs">나의문의</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/">다운로드</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/">쿠폰등록</nuxt-link>
+              </li>
               <li v-for="user in users" :key="user.id">
                 <NavigationMenuLink as-child>
                   <a
